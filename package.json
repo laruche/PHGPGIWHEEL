@@ -1,7 +1,7 @@
 {
-  "name": "com.phonegap.helloworld",
+  "name": "com.smms.com2.pg.wheelGil",
   "version": "1.0.0",
-  "displayName": "helloworld",
+  "displayName": "Wheel Gilette",
   "cordova": {
     "platforms": [
       "android"
