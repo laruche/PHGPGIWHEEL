@@ -398,8 +398,9 @@ var app = {
     },
 
     show : function() {
-        $('#hotesse').hide();
+        $('#hotesse input').val(0);
         Hotesse.getDBvalue(function() {
+
             $('#page1').hide();
             $('#hotesse').show();
         });
