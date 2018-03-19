@@ -449,6 +449,9 @@ textarea {
 }
 #page1 {
   display: block;
+  width: 1920px;
+  height: 1200px;
+  background: url('../img/bgHome.jpg');
 }
 #page1 #showHotesse {
   width: 104px;
@@ -466,19 +469,21 @@ textarea {
 .roulette {
   position: absolute;
   margin: 0 auto;
-  width: 967px;
-  height: 967px;
+  width: 850px;
+  height: 850px;
   left: 40%;
   background: url('../img/wheel.png');
+  background-size: contain;
   border-radius: 967px;
   border: none;
+  top: 330px;
 }
 .spinner {
   position: absolute;
   width: 226px;
   height: 231px;
-  top: 362px;
-  left: 375px;
+  top: 630px;
+  left: 320px;
   background: url('../img/pointeur.png');
   border: none;
 }
@@ -495,12 +500,15 @@ button:focus {
  */
 #page2 {
   display: none;
+  width: 1920px;
+  height: 1200px;
+  background: url('../img/bgWin.jpg');
 }
 #page2 #price {
   position: absolute;
-  top: 55px;
+  top: 605px;
   display: block;
-  left: 55px;
+  left: 85px;
 }
 #page2 #price.dotation_0 {
   width: 817px;
@@ -516,6 +524,7 @@ button:focus {
   width: 957px;
   height: 546px;
   background: url('../img/trousse.png');
+  top: 440px;
 }
 #page2 #price.dotation_3 {
   width: 873px;
@@ -527,12 +536,18 @@ button:focus {
   height: 145px;
   background: url('../img/btValider.png');
   display: block;
+  position: absolute;
+  bottom: 85px;
+  right: 490px;
 }
 #page2 .buttonClose {
   width: 96px;
   height: 96px;
   background: url('../img/close.png');
   display: block;
+  position: absolute;
+  right: 450px;
+  top: 60px;
 }
 #hotesse {
   padding: 25px;
@@ -540,6 +555,11 @@ button:focus {
 #hotesse input {
   border: 1px solid red;
   text-align: center;
+}
+#page3 {
+  width: 1920px;
+  height: 1200px;
+  background: url('../img/bgSelect.jpg');
 }
 #page3 .selectProduct div.selector {
   display: block;
@@ -553,44 +573,44 @@ button:focus {
 #page3 .selectProduct div.selector.activate .alpha {
   width: 100%;
   height: 100%;
-  opacity: 0.3;
-  background: green;
+  border: 10px solid red;
 }
 #page3 .selectProduct .jetable {
-  left: 50px;
+  left: 100px;
   background: url('../img/jetable.png');
 }
 #page3 .selectProduct .systeme {
-  left: 500px;
+  left: 530px;
   background: url('../img/systeme.png');
 }
 #page3 .selectProduct .mousse {
-  left: 950px;
-  background: url('../img/produitMousse.png');
+  left: 960px;
+  background: url(../img/produitMousse.png);
+  top: 286px !important;
 }
 #page3 .selectPrice div.selector {
   display: block;
   width: 318px;
   height: 50px;
   position: absolute;
-  left: 550px;
+  left: 790px;
 }
 #page3 .selectPrice div.selector.activate .alpha {
   width: 100%;
   height: 100%;
-  opacity: 0.3;
-  background: green;
+  opacity: 0.6;
+  background: red;
 }
 #page3 .selectPrice .prix60100 {
-  top: 700px;
+  top: 750px;
   background: url('../img/60100.png');
 }
 #page3 .selectPrice .prix100150 {
-  top: 790px;
+  top: 840px;
   background: url('../img/100150.png');
 }
 #page3 .selectPrice .prix150 {
-  top: 880px;
+  top: 920px;
   background: url('../img/150plus.png');
 }
 #page3 .buttonEnd {
@@ -599,8 +619,8 @@ button:focus {
   background: url('../img/btValider.png');
   display: block;
   position: absolute;
-  top: 850px;
-  left: 1000px;
+  top: 900px;
+  left: 1060px;
 }
 #page3 .buttonClose {
   width: 96px;
@@ -609,5 +629,5 @@ button:focus {
   display: block;
   position: absolute;
   top: 50px;
-  right: 50px;
+  right: 450px;
 }

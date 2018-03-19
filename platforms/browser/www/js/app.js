@@ -230,7 +230,20 @@ var app = {
           }
         }
       });
+
    
+    },
+
+    removeDotations : function(cb) {
+
+      
+      dataB.db.transaction(function (tx) {
+        tx.executeSql('DELETE FROM dotations WHERE win = 0', [], function(tx, rs){
+           console.log('remove');
+           cb();
+        }, dataB.errorCB);
+     });
+    
     },
 
 
@@ -385,6 +398,7 @@ var app = {
     },
 
     show : function() {
+        $('#hotesse').hide();
         Hotesse.getDBvalue(function() {
             $('#page1').hide();
             $('#hotesse').show();
@@ -406,6 +420,8 @@ var app = {
 
 
 
+
+
     },
 
     addDotations : function() {
@@ -417,6 +433,17 @@ var app = {
         d3toAdd = Hotesse.checkQ(3);
 
         dataB.insertDotations([d0toAdd, d1toAdd, d2toAdd, d3toAdd], function() {
+            alert('success');
+            Hotesse.show();
+        });
+
+
+    },
+
+    clearDB : function() {
+    
+
+        dataB.removeDotations(function() {
             alert('success');
             Hotesse.show();
         });
@@ -438,6 +465,10 @@ var app = {
 
         $('#hotesse button.back').click(function() {
             home.show();
+        })
+
+        $('#hotesse button.vider').click(function() {
+            Hotesse.clearDB();
         })
     }
 };;var Save = {
