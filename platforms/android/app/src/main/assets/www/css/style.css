@@ -1,0 +1,613 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+/*
+ * A better looking default horizontal rule
+ */
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/*
+ * Remove default fieldset styles.
+ */
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* Style adjustments for viewports that meet the condition */
+/* Style adjustments for high resolution devices */
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+/*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+/*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio {
+  vertical-align: middle;
+}
+canvas {
+  vertical-align: middle;
+}
+iframe {
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+svg {
+  vertical-align: middle;
+}
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.hidden {
+  display: none !important;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+.visuallyhidden.focusable:active {
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  *:before {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a {
+    text-decoration: underline;
+  }
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after {
+    content: "";
+  }
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+  img {
+    page-break-inside: avoid;
+  }
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+  h2 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
+  h3 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
+}
+.page {
+  display: none;
+}
+#page1 {
+  display: block;
+}
+#page1 #showHotesse {
+  width: 104px;
+  height: 104px;
+  display: block;
+  background: url('../img/hotesse.png');
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.container {
+  position: absolute;
+  left: 20%;
+}
+.roulette {
+  position: absolute;
+  margin: 0 auto;
+  width: 967px;
+  height: 967px;
+  left: 40%;
+  background: url('../img/wheel.png');
+  border-radius: 967px;
+  border: none;
+}
+.spinner {
+  position: absolute;
+  width: 226px;
+  height: 231px;
+  top: 362px;
+  left: 375px;
+  background: url('../img/pointeur.png');
+  border: none;
+}
+button:active {
+  border: none;
+  outline: none;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+/*
+ * mousse ballon trousse casquette
+ */
+#page2 {
+  display: none;
+}
+#page2 #price {
+  position: absolute;
+  top: 55px;
+  display: block;
+  left: 55px;
+}
+#page2 #price.dotation_0 {
+  width: 817px;
+  height: 410px;
+  background: url('../img/mousse.png');
+}
+#page2 #price.dotation_1 {
+  width: 827px;
+  height: 348px;
+  background: url('../img/ballon.png');
+}
+#page2 #price.dotation_2 {
+  width: 957px;
+  height: 546px;
+  background: url('../img/trousse.png');
+}
+#page2 #price.dotation_3 {
+  width: 873px;
+  height: 326px;
+  background: url('../img/casquette.png');
+}
+#page2 .buttonNext {
+  width: 427px;
+  height: 145px;
+  background: url('../img/btValider.png');
+  display: block;
+}
+#page2 .buttonClose {
+  width: 96px;
+  height: 96px;
+  background: url('../img/close.png');
+  display: block;
+}
+#hotesse {
+  padding: 25px;
+}
+#hotesse input {
+  border: 1px solid red;
+  text-align: center;
+}
+#page3 .selectProduct div.selector {
+  display: block;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#page3 .selectProduct div.selector.activate .alpha {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background: green;
+}
+#page3 .selectProduct .jetable {
+  left: 50px;
+  background: url('../img/jetable.png');
+}
+#page3 .selectProduct .systeme {
+  left: 500px;
+  background: url('../img/systeme.png');
+}
+#page3 .selectProduct .mousse {
+  left: 950px;
+  background: url('../img/produitMousse.png');
+}
+#page3 .selectPrice div.selector {
+  display: block;
+  width: 318px;
+  height: 50px;
+  position: absolute;
+  left: 550px;
+}
+#page3 .selectPrice div.selector.activate .alpha {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background: green;
+}
+#page3 .selectPrice .prix60100 {
+  top: 700px;
+  background: url('../img/60100.png');
+}
+#page3 .selectPrice .prix100150 {
+  top: 790px;
+  background: url('../img/100150.png');
+}
+#page3 .selectPrice .prix150 {
+  top: 880px;
+  background: url('../img/150plus.png');
+}
+#page3 .buttonEnd {
+  width: 427px;
+  height: 145px;
+  background: url('../img/btValider.png');
+  display: block;
+  position: absolute;
+  top: 850px;
+  left: 1000px;
+}
+#page3 .buttonClose {
+  width: 96px;
+  height: 96px;
+  background: url('../img/close.png');
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
