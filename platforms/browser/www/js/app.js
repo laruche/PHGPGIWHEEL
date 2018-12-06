@@ -351,16 +351,16 @@ var app = {
 
     prices : [
       {
-        name: 'mousse'
+        name: 'costume'
       },
       {
-          name: 'ballon'
+          name: 'fusion'
         },
       {
-          name: 'trousse'
+          name: 'bande'
         },
       {
-          name: 'casquette'
+          name: 'mach3'
         }
     ]
 };;var Price = {
