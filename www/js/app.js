@@ -218,7 +218,7 @@ var app = {
     },
 
     insertDotations : function(data,cb) {
-
+      console.log(data);
       $.each(data, function( index, value ) {
         if(value > 0) {
           for (i = 0; i < value; i++) { 
@@ -230,6 +230,7 @@ var app = {
           }
         }
       });
+      cb();
 
    
     },
@@ -414,7 +415,7 @@ var app = {
             console.log(data);
             $.each(data, function( index, value ) {
                 console.log('#hotesse #dotation_'+value.name);
-                $('#hotesse #dotation_'+value.name).val(value.cb).attr('min', value.cb);
+                $('#hotesse #dotation_'+value.name).attr('min', value.cb).val(value.cb);
             });
             cb();
         })
@@ -426,6 +427,7 @@ var app = {
     },
 
     addDotations : function() {
+        $('#hotesse button').hide();
         var d0toAdd = 0, d1toAdd = 0, d2toAdd = 0, d3toAdd = 0;
         // dotation 0 
         d0toAdd = Hotesse.checkQ(0);
@@ -433,20 +435,28 @@ var app = {
         d2toAdd = Hotesse.checkQ(2);
         d3toAdd = Hotesse.checkQ(3);
 
+
+
         dataB.insertDotations([d0toAdd, d1toAdd, d2toAdd, d3toAdd], function() {
-            alert('success');
             Hotesse.show();
+            alert('success');     
+            $('#hotesse button').show();       
         });
 
 
     },
 
     clearDB : function() {
-    
+        $('#hotesse button').hide();
 
         dataB.removeDotations(function() {
-            alert('success');
             Hotesse.show();
+            $('#hotesse #dotation_0').attr('min', 0);
+            $('#hotesse #dotation_1').attr('min', 0);
+            $('#hotesse #dotation_2').attr('min', 0);
+            $('#hotesse #dotation_3').attr('min', 0);
+            alert('success');   
+            $('#hotesse button').show();          
         });
 
 

@@ -514,22 +514,25 @@ button:focus {
   width: 1096px;
   height: 585px;
   background: url('../img/costume.png');
+  top: 440px;
 }
 #page2 #price.dotation_1 {
   width: 1157px;
   height: 411px;
   background: url('../img/fusion.png');
+  top: 530px;
 }
 #page2 #price.dotation_2 {
   width: 1147px;
   height: 349px;
   background: url('../img/bande.png');
-  top: 440px;
+  top: 570px;
 }
 #page2 #price.dotation_3 {
   width: 1124px;
   height: 415px;
   background: url('../img/mach3.png');
+  top: 510px;
 }
 #page2 .buttonNext {
   width: 427px;
